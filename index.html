@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>VizTrust: A Visual Analytics Tool for Capturing User Trust Dynamics in Human-AI Communication</title>
+  <title>BingAster at #SMM4H-HeaRD 2025: Identifying Dementia Caregivers on Twitter Using Prompt-Based LLMs and Cognitive Distortion Patterns</title>
   <link rel="icon" type="image/x-icon" href="static/images/trust.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -53,16 +53,20 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-2 publication-title">
-              Cognitive Distortion Analysis: What Are Caregivers Thinking?
+              BingAster at #SMM4H-HeaRD 2025: Identifying Dementia Caregivers on Twitter Using Prompt-Based LLMs and Cognitive Distortion Patterns
             </h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Artin Tonekaboni<sup>1</sup>,</span>
-              <span class="author-block">Vision Wang<sup>1</sup>,</span>
-              <span class="author-block">Luis M. Rocha<sup>1</sup>,</span>
-              <span class="author-block">Sadamori Kojaku<sup>1</sup></span>
+              <span class="author-block">
+		      <a href="https://www.linkedin.com/in/artintonekaboni/" target="_blank">Artin Tonekaboni</a><sup>1</sup>,</span>
+              <span class="author-block">
+		      <a href="https://xin-wang-kr.github.io/" target="_blank">Vision(Xin) Wang</a><sup>1</sup>,</span>
+              <span class="author-block">
+		      <a href="https://www.binghamton.edu/ssie/people/profile.html?id=skojaku" target="_blank">Sadamori Kojaku</a><sup>1</sup>,</span>
+              <span class="author-block">
+		      <a href="https://www.binghamton.edu/ssie/people/profile.html?id=lrocha" target="_blank">Luis M. Rocha</a><sup>1, 2</sup></span>
             </div>
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Binghamton University, New York, USA</span>
+              <span class="author-block"><sup>1</sup>Binghamton University, New York, USA; <sup>2</sup>Universidade Católica Portuguesa, Lisbon, Portugal</span>
               <span class="corres-author"><br><sup>*</sup>Corresponding author email: xwang314@binghamton.edu</span>
               <span class="conference"><br>Workshop: <b>ICWSM-SMM4H 2025</b></span>
             </div>
@@ -71,16 +75,6 @@
                   <div class="column has-text-centered">
                     <div class="publication-links">
 
-			<!-- Paper link -->
-                      <span class="link-block">
-                        <a href="https://dl.acm.org/doi/10.1145/3706599.3719798" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span> 
 			<!-- Preprint PDF link -->
                       <span class="link-block">
                         <a href="http://arxiv.org/abs/2503.07279" target="_blank"
@@ -92,16 +86,6 @@
                       </a>
                     </span>
 			
-		<!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/xin-wang-kr/VizTrust-project"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>GitHub</span>
-                  </a>
-              </span>
 			    
             </div>
           </div>
@@ -163,7 +147,21 @@
   </div>
 </section>
 
-
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        We designed a zero-shot prompt for classifying whether a tweet indicates the author has a family member with dementia. The prompt encourages step-by-step reasoning, improving model sensitivity to indirect expressions. The example below illustrates how we structured the system using instruction-tuned models such as DeepSeek-R1 and Mixtral.
+      </p>
+      <figure>
+        <img src="static/images/BingAster/results.png" alt="Classification performance for validation set and test set." style="max-width: 100%;">
+        <figcaption class="figure-label">Classification performance for validation set and test set.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>	
 
 <!-- Multi-Agent System -->
 <section class="section">
@@ -175,7 +173,7 @@
       </p>
       <figure>
         <img src="static/images/BingAster/Multi-Agent-System.png" alt="Multi-agent system diagram" style="max-width: 100%;">
-        <figcaption class="figure-label">Multi-agent LLM architecture used for distortion evaluation</figcaption>
+        <figcaption class="figure-label">Distortion evaluation pipeline with multi-agent system.</figcaption>
       </figure>
     </div>
   </div>
@@ -208,10 +206,12 @@
 
         <!-- Artin -->
         <div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;">
-          <span class="image fit" style="margin-bottom: 0.5em;">
+          <a href="https://www.linkedin.com/in/artintonekaboni/">
+		<span class="image fit" style="margin-bottom: 0.5em;">
             <img src="static/images/author/Artin-Tonekaboni.jpg" alt="Artin Tonekaboni" height="250px" style="border-radius: 50%;" />
           </span>
-          <b>Artin Tonekaboni</b><br>
+          <b>Artin Tonekaboni</b>
+	  </a><br>
           Undergraduate Researcher
         </div>
 
@@ -221,7 +221,7 @@
             <span class="image fit" style="margin-bottom: 0.5em;">
               <img src="static/images/author/vision.jpeg" alt="Vision Wang" height="250px" style="border-radius: 50%;" />
             </span>
-            <b>Vision Wang</b>
+            <b>Vision(Xin) Wang</b>
           </a><br>
           Research Mentor
         </div>
@@ -269,26 +269,6 @@
   </div>
 </section>
 <!-- End paper abstract -->
-
-	
-  
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{wang2025viztrust,
-  title={VizTrust: A Visual Analytics Tool for Capturing User Trust Dynamics in Human-AI Communication.},
-  author={Wang, Xin and Tulk Jesso, Stephanie and Kojaku, Sadamori and Neyens David M. and Kim, Min-Sun},
-  booktitle={Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
-  pages={1--10},
-  year={2025}
-}</code></pre>
-	<p>If you have any questions, please feel free to contact <a href="mailto:xinwang35314@gmail.com">Vision(Xin) Wang</a></p>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
 
   <footer class="footer">
   <div class="container">
