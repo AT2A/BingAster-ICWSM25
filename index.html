@@ -53,29 +53,20 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-2 publication-title">
-		    <span style="color: #c30010;">VizTrust</span>: A Visual Analytics Tool for Capturing User Trust Dynamics in Human-AI Communication
-	    </h1>
+              Cognitive Distortion Analysis: What Are Caregivers Thinking?
+            </h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://xin-wang-kr.github.io/" target="_blank">Vision(Xin) Wang</a><sup>*1</sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.binghamton.edu/ssie/people/profile.html?id=stulkjesso" target="_blank">Stephanie Tulk Jesso</a><sup>1</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://www.binghamton.edu/ssie/people/profile.html?id=skojaku" target="_blank">Sadamori Kojaku</a><sup>1</sup>,</span>
-                    <span class="author-block">
-                      <a href="https://www.clemson.edu/cecas/departments/ie/people/faculty/neyens.html" target="_blank">David M. Neyens</a><sup>2</sup>,</span>
-		    	<span class="author-block">
-                	<a href="https://sci.manoa.hawaii.edu/min-sun-kim/" target="_blank">Min Sun Kim</a><sup>3</sup>
-			</span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Binghamton University, New York, USA; <sup>2</sup>Clemson University, South Carolina, USA; <sup>3</sup>University of Hawaii at Manoa, Hawaii, USA</span>
-                    <span class="corres-author"><small><br><sup>*</sup>Corresponding author email: xwang314@binghamton.edu</small></span>
-		    <span class="conference"><br>Accepted conference: <b>ACM CHI Conference 2025</b> (acceptance rate: 32.83%)</span>
-                    <span class="doi"><br>DOI: 10.1145/3706599.3719798</span>
-                  </div>
+              <span class="author-block">Artin Tonekaboni<sup>1</sup>,</span>
+              <span class="author-block">Vision Wang<sup>1</sup>,</span>
+              <span class="author-block">Luis M. Rocha<sup>1</sup>,</span>
+              <span class="author-block">Sadamori Kojaku<sup>1</sup></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Binghamton University, New York, USA</span>
+              <span class="corres-author"><br><sup>*</sup>Corresponding author email: xwang314@binghamton.edu</span>
+              <span class="conference"><br>Workshop: <b>ICWSM-SMM4H 2025</b></span>
+            </div>
+            
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -120,14 +111,7 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop has-text-centered">
-    <figure>
-      <img src="static/images/VizTrust/workflow-2.png" alt="Workflow of VizTrust">
-      <figcaption class="figure-label">Workflow of VizTrust</figcaption>
-    </figure>
-  </div>
-</section>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -137,8 +121,25 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-		Trust plays a fundamental role in shaping the willingness of users to engage and collaborate with AI systems. Yet, measuring user trust remains challenging due to its complex and dynamic nature. While traditional survey methods provide trust levels for long conversations, they fail to capture its dynamic evolution during ongoing interactions. Here, we present VizTrust, which addresses this challenge by introducing a real-time visual analytics tool that leverages a multi-agent collaboration system to capture and analyze user trust dynamics in human-agent communication. Built on established human-computer trust scales—competence, integrity, benevolence, and predictability—, VizTrust enables stakeholders to observe trust formation as it happens, identify patterns in trust development, and pinpoint specific interaction elements that influence trust. Our tool offers actionable insights into human-agent trust formation and evolution in real time through a dashboard, supporting the design of adaptive conversational agents that respond effectively to user trust signals.
-	  </p>
+            Family caregivers of individuals with dementia often experi
+            ence significant emotional and cognitive burden, which may
+             manifest in the language they use on social media. Identify
+            ing such posts is valuable for understanding caregiver needs
+             and advancing mental health research. Task 3 of the SMM4H
+             2025 shared task focuses on classifying whether a tweet indi
+            cates that the user has a family member with dementia. The
+             task requires sensitivity to both direct and indirect expres
+            sions of caregiving. We addressed this task using a prompt
+            based zero-shot classification system powered by large lan
+            guage models (LLMs). Our method leverages instruction
+            tuned models, including DeepSeek-R1 and Mixtral-8x7B.
+             To further evaluate our results, we developed a LLM-based
+             multi-agent system to analyze cognitive distortions in tweets
+             labeled as caregiver-related. The resulting distortion patterns
+             offer psychological insight into the model’s predictions and
+             highlight the system’s potential for broader applications in
+             mental health monitoring.
+          </p>
         </div>
       </div>
     </div>
@@ -146,62 +147,57 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- chatbot-UI -->
-<section class="hero">
-	<div class="container is-max-desktop">
-		<div class="hero-body has-text-centered">
-			<h2 class="title is-3">Chatbot User Interface</h2>
-			<img src="static/images/VizTrust/chatbot-UI.png" alt="chatbot UI">
-			<div class="content has-text-justified">
-				<p>
-					A front-end chatbot of VizTrust (set up with Llama-3.1-8b model) interacts with human users in natural languages on topics related to conversational agent design. As receiving each user’s utterance, the front-end chatbot passes the current conversation transcript to a multi-agent system that evaluates trust and Python programs for user behavior analysis using natural language processing and machine learning techniques.
-				</p>
-				
-			</div>
-			
-		</div>
-		
-	</div>
-</section>
-
-<!-- Visualization dashboard -->
-<section class="hero">
-	<div class="container is-max-desktop">
-		<div class="hero-body has-text-centered">
-			<h2 class="title is-3">Visualization Dashboard</h2>
-			<img src="static/images/VizTrust/dashboard.jpg" alt="dashboard">
-			<div class="content has-text-justified">
-				<p>
-					In the visualization dashboard interface, the main view presents four time series visualizations of all conversation turns, including user trust dynamics, user engagement, user emotional tones, and user theory of politeness. Each visualization plot has interactive features that allow design stakeholders to gain more detailed information on trend-changing points. The design stakeholders can select any conversation turn on the plot of user trust dynamics to read supporting evidence on the trust rating scores in detail.
-				</p>
-				
-			</div>
-			
-		</div>
-		
-	</div>
-</section>
-
-<!-- Youtube video presentation -->
+<!-- Prompt-Based Classification -->
 <section class="section">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/ko2B81nYGr4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Prompt-Based Classification</h2>
+    <div class="content has-text-justified">
+      <p>
+        We designed a zero-shot prompt for classifying whether a tweet indicates the author has a family member with dementia. The prompt encourages step-by-step reasoning, improving model sensitivity to indirect expressions. The example below illustrates how we structured the system using instruction-tuned models such as DeepSeek-R1 and Mixtral.
+      </p>
+      <figure>
+        <img src="static/images/BingAster/Prompt-Based-Classification.png" alt="Prompt structure for LLM classification" style="max-width: 100%;">
+        <figcaption class="figure-label">LLM Prompt with example classification workflow</figcaption>
+      </figure>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-	
+
+
+
+<!-- Multi-Agent System -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Multi-Agent System for Cognitive Distortion Analysis</h2>
+    <div class="content has-text-justified">
+      <p>
+        After classification, we use a multi-agent system where each agent detects one of 11 cognitive distortion types. A controller agent routes tweets to distortion-specific agents, each leveraging a definition and keyword feature set to decide if the distortion is present. This produces a binary vector for analysis.
+      </p>
+      <figure>
+        <img src="static/images/BingAster/Multi-Agent-System.png" alt="Multi-agent system diagram" style="max-width: 100%;">
+        <figcaption class="figure-label">Multi-agent LLM architecture used for distortion evaluation</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Evaluation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Evaluation by Cognitive Distortion Analysis</h2>
+    <div class="content has-text-justified">
+      <p>
+        To interpret the system’s output, we analyzed the distortion distribution for tweets labeled as “caregiver-related.” The radar chart below compares distortion frequencies between validation and test sets. Emotional Reasoning and Catastrophizing dominate across both, validating the model’s psychological relevance.
+      </p>
+      <figure>
+        <img src="static/images/BingAster/RadarPlot.jpg" alt="Distortion Radar Chart" style="max-width: 100%;">
+        <figcaption class="figure-label">Radar plot comparing distortion frequencies across datasets</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
   
 <!-- Team member -->
 <section class="hero is-small is-light">
@@ -209,23 +205,52 @@
     <div class="container">
       <h2 class="title is-3">Team</h2>
       <div class="columns is-centered">
-								
-	<div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;"><a href="https://xin-wang-kr.github.io/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="static/images/author/vision.jpeg" alt="Vision(Xin) Wang" height="250px" style="border-radius: 50%;" /></span>Vision(Xin) Wang</a></div>
 
-	<div class="column" style="font-size: 0.78em; line-height: 1.5em; text-align: center;"><a href="https://www.binghamton.edu/ssie/people/profile.html?id=stulkjesso"><span class="image fit" style="margin-bottom: 0.5em;"><img src="static/images/author/stephanie.jpeg" alt="Stephanie Tulk Jesso" height="250px" style="border-radius: 50%;" /></span>Stephanie Tulk Jesso</a></div>
+        <!-- Artin -->
+        <div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;">
+          <span class="image fit" style="margin-bottom: 0.5em;">
+            <img src="static/images/author/Artin-Tonekaboni.jpg" alt="Artin Tonekaboni" height="250px" style="border-radius: 50%;" />
+          </span>
+          <b>Artin Tonekaboni</b><br>
+          Undergraduate Researcher
+        </div>
 
-	<div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;"><a href="https://www.binghamton.edu/ssie/people/profile.html?id=skojaku"><span class="image fit" style="margin-bottom: 0.5em;"><img src="static/images/author/sadamori.png" alt="Sadamori Kojaku" height="250px" style="border-radius: 50%;" /></span>Sadamori Kojaku</a></div>
-	
-	<div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;"><a href="https://www.clemson.edu/cecas/departments/ie/people/faculty/neyens.html"><span class="image fit" style="margin-bottom: 0.5em;"><img src="static/images/author/david.png" alt="David M. Neyens" height="250px" style="border-radius: 50%;" /></span>David M. Neyens</a></div>
+        <!-- Vision -->
+        <div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;">
+          <a href="https://xin-wang-kr.github.io/">
+            <span class="image fit" style="margin-bottom: 0.5em;">
+              <img src="static/images/author/vision.jpeg" alt="Vision Wang" height="250px" style="border-radius: 50%;" />
+            </span>
+            <b>Vision Wang</b>
+          </a><br>
+          Research Mentor
+        </div>
 
-	<div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;"><a href="https://sci.manoa.hawaii.edu/min-sun-kim/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="static/images/author/min-sun.png" alt="Min-Sun Kim" height="250px" style="border-radius: 50%;" /></span>Min-Sun Kim</a></div>
+        <!-- Sadamori -->
+        <div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;">
+          <a href="https://www.binghamton.edu/ssie/people/profile.html?id=skojaku">
+            <span class="image fit" style="margin-bottom: 0.5em;">
+              <img src="static/images/author/sadamori.png" alt="Sadamori Kojaku" height="250px" style="border-radius: 50%;" />
+            </span>
+            <b>Sadamori Kojaku</b>
+          </a><br>
+          Technical Advisor
+        </div>
 
-      </div>								
-								
+        <!-- Luis -->
+        <div class="column" style="font-size: 0.8em; line-height: 1.5em; text-align: center;">
+          <a href="https://www.binghamton.edu/ssie/people/profile.html?id=lrocha">
+            <b>Luis M. Rocha</b>
+          </a><br>
+          Principal Investigator
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
 <!--End team member -->
+
 
 
 <!-- Acknowledgement -->
